@@ -152,6 +152,6 @@ h1, h2, h4 {
 
 @media (max-width: 769px) {
     * {
-        filter: brightness(80%);
+        filter: brightness(90%);
     }  
 }
