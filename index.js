@@ -149,7 +149,7 @@ async function registerClick(tileIndex) {
             }
         } else {
             inGame = false;
-            $("#score").text(`Incorrect, You scored ${score}!`).removeClass("hidden");
+            $("#score").text(`Incorrect. You scored ${score}!`).removeClass("hidden");
             $("#retry").removeClass("hidden");
 
             // Update high score
