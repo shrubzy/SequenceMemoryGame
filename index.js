@@ -153,7 +153,7 @@ async function registerClick(tileIndex) {
             $("#retry").removeClass("hidden");
 
             // Update high score
-            if (score > highScore) {
+            if (score >= highScore) {
                 highScore = score;
                 $("#high-score").text(`High Score: ${highScore}`);
                 localStorage.setItem("highScore", highScore);
