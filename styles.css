@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: hsl(303, 77%, 22%);
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1, h2, h4, button {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h4 {
+    color: hsl(328, 83%, 67%);
+}
+
+#score {
+    margin-bottom: 1rem;
+}
+
+#high-score {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+#mute {
+    color: hsl(328, 83%, 67%);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.button {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: hsl(297, 87%, 15%);
+    color: #f167b1;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: hsl(297, 87%, 35%);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-vertical {
+    flex-direction: column;
+    margin: 0.25rem;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.no-display {
+    display: none;
+}
+
+.tile {
+    width: 10rem;
+    height: 10rem;
+    border: 0.4rem solid #151515;
+    border-radius: 13px;
+    margin: 0.25rem;
+    cursor: pointer;
+}
+
+.tile-0 {
+    background-color: hsl(24, 95%, 45%);
+}
+
+.tile-0.active {
+    background-color: hsl(24, 95%, 65%)
+}
+
+.tile-0:active {
+    background-color: hsl(24, 95%, 65%)
+}
+
+.tile-1 {
+    background-color: hsl(210, 77%, 35%);
+}
+
+.tile-1.active {
+    background-color: hsl(210, 77%, 55%);
+}
+
+.tile-1:active {
+    background-color: hsl(210, 77%, 55%);
+}
+
+.tile-2 {
+    background-color: hsl(318, 82%, 34%);
+}
+
+.tile-2.active {
+    background-color: hsl(318, 82%, 54%);
+}
+
+.tile-2:active {
+    background-color: hsl(318, 82%, 54%);
+}
+
+.tile-3 {
+    background-color: hsl(0, 88%, 44%);
+}
+
+.tile-3.active {
+    background-color: hsl(0, 88%, 64%);
+}
+
+.tile-3:active {
+    background-color: hsl(0, 88%, 64%);
+}
+
+.disabled {
+    pointer-events: none;
+    user-select: none;
+    cursor: default;
+}
+
+@media (max-width: 426px) {
+    .tile {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    #mute {
+        font-size: 1rem;;
+    }
+}

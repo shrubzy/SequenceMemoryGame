@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequence Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="container container-vertical">
+    <h4 id="high-score">High Score: 0</h3>
+    <div class="container container-vertical">
+        <h1>Sequence Game</h1>
+        <h2 id="level">Level 1</h2>
+    </div>
+    <div class="container container-vertical">
+        <div class="container">
+            <div class="tile tile-0"></div>
+            <div class="tile tile-1"></div>
+        </div>
+        <div class="container">
+            <div class="tile tile-2"></div>
+            <div class="tile tile-3"></div>
+        </div>
+    </div>
+    <div class="container container-vertical">
+        <h2 id="score" class="hidden">You scored x!</h2>
+        <div id="start" class="container button">Start!</div>
+        <div id="retry"class="container button no-display">Try Again!</div>
+    </div>
+    <i id="mute" class="fa-solid fa-volume-high"></i>
+    <script src="https://kit.fontawesome.com/4323c00408.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
